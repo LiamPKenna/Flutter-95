@@ -32,7 +32,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +47,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: EdgeInsets.all(15.0),
                 color: Color.fromRGBO(191, 191, 193, 1),
                 child: Raised(
-                  child: Text('hello!'),
+                  child: Center(
+                    child: Text(
+                      'OK',
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -59,13 +66,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: EdgeInsets.all(5.0),
                 color: Color.fromRGBO(191, 191, 193, 1),
                 child: InsetGrey(
-                    child: Text(
-                  'OK',
-                  style: TextStyle(
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.w900,
+                  child: Text(
+                    'OK',
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      fontWeight: FontWeight.w900,
+                    ),
                   ),
-                )),
+                ),
               ),
             ),
             Raised(
@@ -89,7 +97,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {print('press');},
+        onPressed: () {
+          print('press');
+        },
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
