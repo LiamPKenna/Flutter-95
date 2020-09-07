@@ -83,11 +83,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: EdgeInsets.all(5.0),
                 color: Color.fromRGBO(191, 191, 193, 1),
                 child: Inset(
-                    color: Colors.blue.shade900,
+                    color: Color.fromRGBO(0, 17, 115, 1),
                     child: Text(
                       'Message Text',
                       style: TextStyle(
                         fontSize: 16.0,
+                        color: Colors.white,
                       ),
                     )),
               ),
